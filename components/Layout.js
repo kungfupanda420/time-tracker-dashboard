@@ -1,11 +1,10 @@
 import Content from "./Content";
 
-const Layout = ({ children }) => {
-  return (
-    <main>
-        <Content />
-    </main>
-  );
-};
+const Layout = ({ children }) => (
+  <main>
+    <Content />
+    {children}
+  </main>
+);
 
 export default Layout;

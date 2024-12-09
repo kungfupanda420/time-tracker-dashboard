@@ -2,13 +2,22 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial,
+    "system-ui", sans-serif;
+  line-height: 1.5;
+  background: white; /* Explicitly set for light mode */
+  color: black; /* Default text color for light mode */
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:focus {
+  outline: 2px solid #0078d4; /* Accessible focus color */
+  outline-offset: 2px;
 }
 
 * {
@@ -22,5 +31,9 @@ a {
   body {
     color: white;
     background: black;
+  }
+
+  a:focus {
+    outline: 2px solid #00cdaf; /* Adjusted focus color for dark mode */
   }
 }
